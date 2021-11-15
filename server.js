@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
 })
 
 
-
+// This is the main menu question and the switch
 const main = () => {
 
     inquirer
@@ -49,7 +49,7 @@ const main = () => {
 
     }
 
-  
+  // This views all of the employees 
     const getEmployeeInformation = () => {
 
 
@@ -62,7 +62,7 @@ const main = () => {
         })
     }
 
-
+  // This views all of the employees by department 
     const getDepartmentInformation = () => {
 
         inquirer
@@ -95,7 +95,7 @@ const main = () => {
         })
     }
 
-
+ // This views the employees by roles 
     const getEmployeeRolesInfo = () => {
 
       connection.query("SELECT * FROM Role ", (err, queryResult) => {
@@ -106,7 +106,7 @@ const main = () => {
             main();
         })
     }
-
+ // Adds a new employee to EMS
     const getNewEmployeeInfo = () => {
 
         inquirer
@@ -143,7 +143,7 @@ const main = () => {
             })
     }
 
-   
+   // This adds a new department 
     const getNewDepartmentInfo = () => {
 
         inquirer
@@ -166,7 +166,7 @@ const main = () => {
             })
     }
 
-
+  // This adds a new role 
     const getNewRoleInfo = () => {
 
         inquirer
@@ -197,7 +197,7 @@ const main = () => {
             })
     }
 
- 
+ // This updates the roles 
     const getUpdateRoleInfo = () => {
 
         inquirer
