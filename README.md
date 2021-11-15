@@ -16,4 +16,4 @@ A command-line application built from scratch to manage a company's employee dat
 ## Links 
 
 [GitHub Repo](https://github.com/kdassign/HW12-EMS)
-[Github] (https://github.com/kdassign)
+[Github](https://github.com/kdassign)
